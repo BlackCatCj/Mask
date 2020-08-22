@@ -21,7 +21,9 @@ section .content h2 {
   font-size: 15vw;
   font-weight: 900;
   line-height: 1.5em;
-  
+  /* 文字的背景即为区块的背景，文字之外的区域都将被裁剪掉。 */
+  /* !目前只有chrome能使用这个属性 */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* background-position: fixed; */
   background-attachment: fixed;
